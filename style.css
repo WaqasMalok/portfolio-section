@@ -1,0 +1,169 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    color: black;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cont {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2c3e5028;
+
+}
+
+.box-img {
+    width: 100vw;
+    height: 200px;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.box-img:hover { 
+    background-color: #f39c12; 
+}
+.box-img:hover .para>p { 
+    color: #f39c12; 
+}
+
+.box-img img {
+    border-radius: 100%;
+    position: relative;
+    border: 15px double #fff;
+    top: -50%;
+}
+
+.text {
+    width: 100vw;
+}
+
+.para {
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.para h2 {
+    font-size: 2rem;
+    font-family: arial;
+}
+
+.para h2 span {
+    font-weight: 100;
+    color: #2c3e5079;
+}
+
+.para p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    line-height: 1.9rem;
+}
+
+.para a {
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+color: #f39c12;
+font-weight: 600;
+}
+
+.para a:hover {
+    background-color: #f39c12;
+color: #2c3e50;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #fff;
+    height: 100px;
+    background-color: #2c3e50;
+    min-width: 400px;
+
+}
+footer a {
+  margin-left: 5px;
+  font-size: 19px;
+
+}
+footer a:hover {color: #f39c12;
+
+}
+
+@media (max-width:900px) {
+    .para {
+        padding: 5px;
+        width: 80%;
+    }
+
+    .para h2 {
+        font-size: 1.7rem;
+
+    }
+
+    .para p {
+        font-size: 0.9rem;
+
+    }
+
+    .para a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .box-img img {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .text {
+        min-width: 400px;
+
+    }
+
+    .para {
+        padding: 5px;
+        width: 90%;
+        min-width: 400px;
+    }
+
+    .para h2 {
+        font-size: 1.7rem;
+
+    }
+
+    .para p {
+        font-size: 0.9rem;
+
+    }
+
+    .para a {
+        font-size: 1rem;
+    }
+}
